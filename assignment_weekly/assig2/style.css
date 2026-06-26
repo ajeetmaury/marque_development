@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f0f0f0;
+    width: 100vw;
+    /* height: 100vh; */
+}
+
+.container h2{
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+.container h1{
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.box{
+    width: 25vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    margin: 0 20px;
+    border-radius: 15px;
+}
+
+.upper_box{
+    position: relative;
+    width:20vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    /* padding: 20px; */
+    line-height: 1.2;
+    border-radius: 10px;
+}
+
+.upper_box p{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lower_box{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn{
+    width: 250px;
+    height: 40px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 15px 0 0 0;
+}
+
+.bottom_box{
+    display: flex;
+    flex-direction: column; 
+    /* justify-content: start; */
+    /* align-items: center; */
+    /* padding: 20px; */
+}
+
+.bottom_box h2{
+    text-align: left;
+}
+
+.bottom_box ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_box ul li{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.dot{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.large-dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #3e3d3c;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.up{
+    position: absolute;
+    top: -10px;
+    background-color: #f6ff47;
+    color: #030303;
+    padding: 5px 10px;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 700;
+}

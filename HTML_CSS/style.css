@@ -1,0 +1,47 @@
+.info-card{
+    background-color: skyblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border:1px solid black;
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+
+#card1{
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+#card2{
+    background-color: rgb(218, 218, 28);
+    font-family: cursive;
+    box-shadow: 5px 2px 5px 2px;
+}
+
+.info-card button{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: content-fit;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+p{
+    font-size: 16px;  /* 16px = 1rem */
+    font-weight: 400;
+}
+
+.parent{
+    background-color: aqua;
+    border: 2px solod aqua;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 30vw;  /* vw(Current Viewport Width) = 1% means 1920/100 = 19.2px for height use vh(Current Viewport Height) = 1% means 1120/100 = 11px */
+    /* margin-left: 35%; */
+    
+}

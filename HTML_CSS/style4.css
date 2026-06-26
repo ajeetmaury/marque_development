@@ -1,0 +1,39 @@
+.{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main{
+    border: 2px solid orangered;
+    width: 30vw;
+    height: 600px;
+    position: relative;
+}
+.container{
+    border: 2px solid green;
+    width: 25vw;
+    height: 400px;
+    /* margin: 10px 10px; */
+    /* justify-content: center;
+    align-items: center; */
+    /* position: relative; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+#box1{
+    position: absolute;
+    background-color: green;
+    bottom: 0;
+    right: 0;
+}
+#box2{
+    position: absolute;
+    background-color: skyblue;
+    justify-content: end;
+    align-items: end;
+    bottom: 0;
+    right: 0;
+
+}
