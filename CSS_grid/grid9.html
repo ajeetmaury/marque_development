@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            grid-template-rows: repeat(1,1fr);
+            /* grid-template-rows: repeat(auto-fit,minmax(200px,1fr)); */
+            background-color: hotpink;
+        }
+
+        .item img{
+            height: 600px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .item{
+            border-radius: 10px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"><img src="https://static.vecteezy.com/system/resources/thumbnails/027/470/827/small/pebbles-stones-background-with-black-toned-ai-generated-photo.jpg" alt=""></div>
+
+        <div class="item item2"><img src="https://plus.unsplash.com/premium_photo-1688045617936-14ac260f13d2?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBjb2xvcnxlbnwwfHwwfHx8MA%3D%3D" alt=""></div>
+
+        <div class="item item3"><img src="https://blackandwhite.imageonline.co/black-and-white-image.jpg" alt=""></div>
+
+        <div class="item item4"><img src="https://images.unsplash.com/photo-1596865249308-2472dc5807d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJsYWNrJTIwY29sb3J8ZW58MHx8MHx8fDA%3D" alt=""></div>
+
+        <div class="item item5"><img src="https://static.vecteezy.com/system/resources/thumbnails/048/510/305/small/majestic-black-lion-with-intense-golden-eyes-exuding-power-and-mystery-photo.jpg" alt=""></div>
+    </div>
+</body>
+</html>
