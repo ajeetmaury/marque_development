@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+</body>
+<script>
+    function calculate(a, b, op){
+        switch(op){
+            case '+':
+                return a+b;
+                break;
+            case '-':
+                return a-b;
+            case '*':
+                return a*b;
+                break
+            case '/':
+                if(b==0){
+                    return "Enter valid value of b";
+                }else{
+                    return a/b;
+                }
+                break;
+            
+                default:
+                    return "Enter valid operator";
+        }
+    }
+
+
+    let a = 3;
+    let b = 5;
+    const op = "+";
+
+    console.log(calculate(a, b, op));
+</script>
+</html>
