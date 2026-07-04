@@ -35,4 +35,3 @@ const cart = ["pen", "vehical", "book", "mouse", "charger", "fruits"];
 // console.log(cart);
 
 console.log(cart.slice(-5));
-
