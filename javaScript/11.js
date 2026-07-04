@@ -20,3 +20,11 @@ arr.push("sleep");
 console.log(arr);
 arr.shift();
 console.log(arr)
+
+let message = ["msg1", "msg2"];
+message.unshift("urgent");
+message.push("msg3");
+console.log(message)
+
+message.shift();
+console.log(message);
