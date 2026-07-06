@@ -34,6 +34,11 @@ greet("Ajeet");
 //     console.log(a+b);
 // }
 
+// Arrow function
 let sum =(a,b)=>{console.log(a+b)}
 
 sum(10, 20);
+
+let goodBye = (name) => {console.log(`GoodBye to you ${name}`)};
+
+goodBye("Ajeet");
