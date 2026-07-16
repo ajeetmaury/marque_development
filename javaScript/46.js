@@ -32,32 +32,56 @@
 // console.log(firstFooBar.getFullName());
 
 // ---------------------------
+// task
 
-class Rectangle{
-    constructor( height, width){
-        this.name = "Rectangle";
-        this.width = width;
-        this.height = height;
+// class Rectangle{
+//     constructor( height, width){
+//         this.name = "Rectangle";
+//         this.width = width;
+//         this.height = height;
+//     }
+
+//     get area(){
+//         return this.height * this.width;
+//     }
+// }
+
+// class Square extends Rectangle{
+//         constructor(name,length){
+//             super(name);
+//             this.height = length;
+//             this.width = length;
+//         }
+// }
+
+// const sq = new Square("Square",10);
+// console.log(sq.area)
+
+// let c1 = new Rectangle(10, 15);
+// console.log("Name", c1.name);
+// console.log("Height", c1.height);
+// console.log("Width", c1.width);
+// console.log("Area",c1.area);
+
+// ----------------------------------
+// task
+
+class Animal{
+    constructor(name){
+        this.name = name;
     }
 
-    get area(){
-        return this.height * this.width;
+    get speak(){
+        return `${this.name} make a sound`
     }
 }
 
-class Square extends Rectangle{
-        constructor(name,length){
-            super(name);
-            this.height = length;
-            this.width = length;
-        }
+class Dog extends Animal{
+    get speak(){
+        // return `${this.name}, specifically barks`;
+        return super.speak;
+    }
 }
 
-const sq = new Square("Square",10);
-console.log(sq.area)
-
-let c1 = new Rectangle(10, 15);
-console.log("Name", c1.name);
-console.log("Height", c1.height);
-console.log("Width", c1.width);
-console.log("Area",c1.area);
+let d = new Dog("Dog");
+console.log(d.speak);
