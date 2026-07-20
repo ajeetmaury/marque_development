@@ -11,7 +11,6 @@
 // }
 
 // class FooBar extends Foo{
-
 //     constructor(name, index){
 //         super(name);
 //         this.index = index;
