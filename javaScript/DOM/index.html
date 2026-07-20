@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Ajeet Kumar</h1>
+    <p class="hello">HELLO</p>
+    <p class="hello1">HELLO1</p>
+    <p class="hello2">HELLO2</p>
+</body>
+<script>
+    // access
+    let ajeet = document.getElementById("heading");
+    console.log(ajeet);
+
+    let ptag = document.getElementsByTagName("p");
+    console.log(ptag);
+
+    let p = document.getElementsByClassName("hello");
+    console.log(p)
+
+    // querySelector
+    let query1 = document.querySelector(".hello1");
+    console.log(query1);
+
+    let query2 = document.querySelectorAll("hello2");
+    console.log(query2)
+</script>
+</html>

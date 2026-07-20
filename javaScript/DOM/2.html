@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <p class="para1">Text1</p>
+        <p class="para2">Text2</p>
+        <p class="para3">Text3</p>
+        <p class="para4">Text4</p>
+    </div>
+</body>
+<script>
+    let para1 = document.querySelector(".para4");
+    para1.innerHTML = "Ajeet"
+    console.log(para1);
+
+    let para2 = document.querySelector(".para3");
+    para2.innerHTML = "<h1>This is paragraph change</h1>"
+    console.log(para2)
+
+    let c2 = document.createElement("h1");
+
+    console(para2.replaceWith(c2));
+    // console.log(para2); 
+
+
+</script>
+</html>
