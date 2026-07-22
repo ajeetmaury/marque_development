@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background : pink;
+    }
+</style>
+<body>
+    <h1>DOM Manipulation</h1>
+
+    <div class="list">
+        <!-- insert -->
+    </div>
+
+</body>
+<style>
+    .para{
+    border : "2px solid green";
+    border-radius : "10px";
+    color : "orangered";
+    justify-content: center;
+}
+</style>
+<script>
+    document.querySelector("h1").style.color = "green"
+
+    let listdiv = document.querySelector(".list")
+    listdiv.style.cssText = "width: 40%; height: 100px; background: white; color : orangered; border : 2px solid red; border-radius : 10px"
+
+    let newPara = document.createElement("p");
+    newPara.innerHTML = "This is my paragraph";
+
+    
+    listdiv.appendChild(newPara)
+    
+    newPara.className = "para"
+    
+    let summaryDiv = document.querySelector(".summery");
+    summaryDiv.classList.add("newSummery");
+
+
+</script>
+</html>

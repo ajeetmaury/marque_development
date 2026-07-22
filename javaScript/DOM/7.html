@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setAttribute/getAttribute</title>
+</head>
+<body>
+    <a >google</a>
+
+    <button>Button</button>
+</body>
+<script>
+    const link = document.querySelector('a');
+    const button = document.querySelector('button')
+
+    // setAttribute
+    link.setAttribute("href", "https://www.google.com/")
+    button.setAttribute('disable', 'true');
+
+
+    // getAttribute
+    console.log(link.getAttribute("href"));
+    console.log('class', 'btn-primary');
+</script>
+</html>
