@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    
+</body>
+<script>
+    // 1.create an empty <div> using JS
+const card = document.createElement("div");
+
+// 2. give a class "card" to this empty <div> using JS only
+card.className = "card";
+
+//3. create a <h1> tag and add text content "News Bulletein"
+const heading = document.createElement("h1");
+heading.textContent = "News Bulletein";
+
+// 4. create a <p> tag and insert Latest news from Vadodara
+const p1 = document.createElement("p");
+p1.textContent = "Latest news from Vadodara";
+
+// 5. create a another <p> tag and insert "summary of the news goes here"
+const p2 = document.createElement("p");
+p2.textContent = "Summary of the news goes here";
+
+// 6. append <h1>, and both <p> tag into the card container & card container  & card container into body
+card.appendChild(heading);
+card.appendChild(p1);
+card.appendChild(p2);
+
+// 7. add css styling to the card container using 'Style.cssText' property(bgColor, width, height etc.)
+document.body.appendChild(card);
+card.style.cssText = `
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+`;
+
+// 8. set Attributes of tags as title="newUpdate1" / title="newUpdate2"
+p1.setAttribute("title", "newUpdate1");
+p2.setAttribute("title", "newUpdate2");
+
+// 9. print these attributes on both <p> tags and add new classes i.e. "newClass1", "newClass2" to respective <p> tag.
+console.log(p1.getAttribute("title")); 
+console.log(p2.getAttribute("title")); 
+
+p1.classList.add("newClass1");
+p2.classList.add("newClass2");
+
+
+// 10.add attribute i.e data-priority="item2_is_top_priority" to the 2nd <p> tag inside card container
+p2.setAttribute("data-priority", "item2_is_top_priority");
+
+console.log(p1.className);
+console.log(p2.className);
+console.log(p2.getAttribute("data-priority"));
+</script>
+</html>
